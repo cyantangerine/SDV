@@ -105,9 +105,13 @@ class HMA1(BaseRelationalModel):
 
                 extension_rows.append(row)
                 index.append(foreign_key_value)
-            except Exception:
+            except Exception as e:
+                print(e)
+                import traceback
+                traceback.print_exc()
                 # Skip children rows subsets that fail
                 pass
+                raise e
 
         return pd.DataFrame(extension_rows, index=index)
 
