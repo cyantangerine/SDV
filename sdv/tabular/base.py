@@ -12,7 +12,7 @@ import cloudpickle
 import copulas
 import numpy as np
 import pandas as pd
-import tqdm
+from tqdm import notebook as tqdm
 
 from sdv.errors import ConstraintsNotMetError
 from sdv.metadata import Table
@@ -492,6 +492,7 @@ class BaseTabularModel:
         output_file_path = self._validate_file_path(output_file_path)
 
         batch_size = min(batch_size, num_rows) if batch_size else num_rows
+        #print(num_rows)
 
         try:
             with tqdm.tqdm(total=num_rows, disable=not show_progress_bar) as progress_bar:
