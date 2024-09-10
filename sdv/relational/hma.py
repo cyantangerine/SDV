@@ -81,7 +81,7 @@ class HMA1(BaseRelationalModel):
 
         index = []
         scale_columns = None
-        for foreign_key_value in foreign_key_values:
+        for foreign_key_value in tqdm.tqdm(foreign_key_values, desc=f"{child_name} Unique", disable=len(foreign_key_values)<10):
             child_rows = child_table.loc[[foreign_key_value]]
             if child_primary in child_rows.columns:
                 del child_rows[child_primary]
