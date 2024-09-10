@@ -30,7 +30,7 @@ save_tables(tables, "input.xlsx")
 addt()
 
 #with WriteableRedirector():
-model = HMA1(metadata)    
+model = HMA1(metadata)
 model.fit(tables)
 
 addt()
@@ -43,3 +43,5 @@ new_data = model.sample()
 save_tables(new_data)
 
 addt()
+print(times)
+save_tables({"time": times}, "time.xlsx")
