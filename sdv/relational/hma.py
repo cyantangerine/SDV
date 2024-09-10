@@ -4,7 +4,7 @@ import logging
 
 import numpy as np
 import pandas as pd
-from tqdm import notebook as tqdm
+import tqdm as tqdm
 
 from sdv.relational.base import BaseRelationalModel
 from sdv.tabular.copulas import GaussianCopula
