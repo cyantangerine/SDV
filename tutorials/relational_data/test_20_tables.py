@@ -2,9 +2,10 @@ import json
 import sqlite3
 
 import pandas as pd
+import tqdm
 
 
-def fetch_data_from_sqlite(path='data_sqlite.db'):
+def fetch_data_from_sqlite(path='./tutorials/relational_data/data_sqlite.db'):
     conn = sqlite3.connect(path)
     query = "SELECT name FROM sqlite_master WHERE type='table';"
     tables = pd.read_sql_query(query, conn)
@@ -73,7 +74,7 @@ def fetch_data_from_sqlite(path='data_sqlite.db'):
 
 def save_tables(tables, ename='output.xlsx'):
     with pd.ExcelWriter(ename) as writer:
-        for name, table in tables.items():
+        for name, table in tqdm.tqdm(tables.items()):
             # 将第一个 DataFrame 保存到第一个工作表
             table.to_excel(writer, sheet_name=name, index=False)
 
