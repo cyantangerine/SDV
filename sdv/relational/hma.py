@@ -81,7 +81,7 @@ class HMA1(BaseRelationalModel):
 
         index = []
         scale_columns = None
-        for foreign_key_value in foreign_key_values:
+        for foreign_key_value in tqdm.tqdm(foreign_key_values, desc=f"{child_name} Unique", disable=len(foreign_key_values)<10):
             child_rows = child_table.loc[[foreign_key_value]]
             if child_primary in child_rows.columns:
                 del child_rows[child_primary]
@@ -280,9 +280,12 @@ class HMA1(BaseRelationalModel):
         else:
             tables = {}
 
-        for table_name in tqdm.tqdm(self.metadata.get_tables(), desc="Fitting HMA1"):
+        psb = tqdm.tqdm(desc="Fitting HMA1")
+        for table_name in self.metadata.get_tables():
             if not self.metadata.get_parents(table_name):
                 self._model_table(table_name, tables)
+                psb.n = len(self._table_sizes)
+                psb.refresh()
 
         LOGGER.info('Modeling Complete')
 
