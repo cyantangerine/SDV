@@ -5,213 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f0299d6-3f2f-4d86-8fd1-5f97f24d996d" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorials/relational_data/02_hma1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/CODEOWNERS" beforeDir="false" afterPath="$PROJECT_DIR$/.github/CODEOWNERS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/question.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/question.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/docs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/integration.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/integration.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/lint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/lint.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/minimum.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/minimum.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/readme.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/readme.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/tutorials.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/tutorials.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/unit.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/unit.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SDV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SDV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AUTHORS.rst" beforeDir="false" afterPath="$PROJECT_DIR$/AUTHORS.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.rst" beforeDir="false" afterPath="$PROJECT_DIR$/CONTRIBUTING.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EVALUATION.md" beforeDir="false" afterPath="$PROJECT_DIR$/EVALUATION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/apt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conda/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/conda/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conda/meta.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/conda/meta.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/constraints/base.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/constraints/base.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/constraints/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/constraints/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/constraints/tabular.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/constraints/tabular.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/demo.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/demo.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/evaluation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/evaluation.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/lite/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/lite/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/lite/tabular.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/lite/tabular.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metadata/dataset.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metadata/dataset.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metadata/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metadata/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metadata/table.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metadata/table.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metrics/demos.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metrics/demos.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metrics/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metrics/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metrics/relational.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metrics/relational.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metrics/tabular.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metrics/tabular.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/metrics/timeseries.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/metrics/timeseries.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/relational/hma1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/relational/hma1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/relational/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/relational/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/sampling/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/sampling/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/sampling/tabular.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/sampling/tabular.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/sdv.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/sdv.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/tabular/copulagan.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/tabular/copulagan.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/tabular/copulas.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/tabular/copulas.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/tabular/ctgan.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/tabular/ctgan.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/tabular/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/tabular/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/tabular/tvae.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/tabular/tvae.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/timeseries/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/timeseries/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/api_reference/timeseries/par.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/api_reference/timeseries/par.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/contributing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/contributing.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/overview.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/overview.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/sdv/constraints.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/sdv/constraints.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/sdv/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/sdv/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/sdv/metadata.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/sdv/metadata.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/developer_guides/sdv/tabular.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/developer_guides/sdv/tabular.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/getting_started/quickstart.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/getting_started/quickstart.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/history.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/history.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/docs/make.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sdv_theme/_templates/docs-navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sdv_theme/_templates/docs-navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sdv_theme/_templates/sidebar-nav-bs.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sdv_theme/_templates/sidebar-nav-bs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sdv_theme/static/sdv.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sdv_theme/static/sdv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sdv_theme/theme.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sdv_theme/theme.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/datasets.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/datasets.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/docker.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/docker.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/install.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/install.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/run.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/run.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/benchmarking/synthesizers.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/benchmarking/synthesizers.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/evaluation/evaluation_framework.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/evaluation/evaluation_framework.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/evaluation/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/evaluation/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/evaluation/synthetic_data_metrics.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/evaluation/synthetic_data_metrics.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/constraints.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/constraints.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/data_description.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/data_description.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/hma1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/hma1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/models.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/relational/relational_metadata.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/relational/relational_metadata.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/constraints.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/constraints.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/copulagan.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/copulagan.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/ctgan.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/ctgan.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/custom_constraints.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/custom_constraints.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/data_description.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/data_description.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/gaussian_copula.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/gaussian_copula.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/handling_constraints.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/handling_constraints.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/models.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/table_metadata.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/table_metadata.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/tabular_preset.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/tabular_preset.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/single_table/tvae.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/single_table/tvae.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/timeseries/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/timeseries/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/timeseries/models.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/timeseries/models.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/user_guides/timeseries/par.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/user_guides/timeseries/par.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/constraints/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/constraints/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/constraints/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/constraints/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/constraints/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/constraints/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/constraints/tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/constraints/tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/constraints/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/constraints/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/data/got_families/character_families.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/data/got_families/character_families.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/data/got_families/characters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/data/got_families/characters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/data/got_families/families.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/data/got_families/families.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/data/got_families/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/data/got_families/metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/lite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/lite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/lite/tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/lite/tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/errors.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/table.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metadata/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metadata/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metrics/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metrics/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metrics/demos.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metrics/demos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metrics/relational.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metrics/relational.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metrics/tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metrics/tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/metrics/timeseries.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/metrics/timeseries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/relational/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/relational/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/relational/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/relational/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/relational/hma.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/relational/hma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/sampling/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/sampling/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/sampling/tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/sampling/tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/sdv.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/sdv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/copulagan.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/copulagan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/copulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/copulas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/ctgan.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/ctgan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/tabular/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/tabular/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/timeseries/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/timeseries/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/timeseries/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/timeseries/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/timeseries/deepecho.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/timeseries/deepecho.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sdv/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/sdv/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/constraints/test_tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/constraints/test_tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/datasets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/lite/test_tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/lite/test_tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/metadata/test_metadata.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/metadata/test_metadata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/metadata/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/metadata/test_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/relational/test_hma.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/relational/test_hma.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/tabular/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tabular/test_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/tabular/test_copulagan.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tabular/test_copulagan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/tabular/test_copulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tabular/test_copulas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/tabular/test_ctgan.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tabular/test_ctgan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/tabular/test_tvae.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tabular/test_tvae.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/test_constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_constraints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/test_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/test_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/test_sdv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_sdv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/timeseries/test_par.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/timeseries/test_par.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/constraints/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/constraints/test_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/constraints/test_tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/constraints/test_tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/constraints/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/constraints/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/lite/test_tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/lite/test_tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/metadata/test_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/metadata/test_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/metadata/test_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/metadata/test_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/metadata/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/metadata/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/metadata/test_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/metadata/test_visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/sampling/test_tabular.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/sampling/test_tabular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/tabular/test_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabular/test_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/tabular/test_copulagan.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabular/test_copulagan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/tabular/test_copulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabular/test_copulas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/tabular/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabular/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_sdv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_sdv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tox.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/Quickstart.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/Quickstart.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/evaluation/Evaluating_Synthetic_Data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/evaluation/Evaluating_Synthetic_Data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/redirector.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/redirector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/01_Relational_Metadata.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/01_Relational_Metadata.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/single_table_data/01_GaussianCopula_Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/single_table_data/01_GaussianCopula_Model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/single_table_data/02_CTGAN_Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/single_table_data/02_CTGAN_Model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/single_table_data/03_CopulaGAN_Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/single_table_data/03_CopulaGAN_Model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/single_table_data/04_TVAE_Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/single_table_data/04_TVAE_Model.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/single_table_data/05_Handling_Constraints.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/single_table_data/05_Handling_Constraints.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/timeseries_data/01_PAR_Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/timeseries_data/01_PAR_Model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dd7a8fa8-3f36-4e7e-af8c-3300c298cd7a.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,29 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.02_hma1.executor": "Run",
-    "Python.ctgan.executor": "Run",
-    "Python.newhma.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "0.17.2.server",
-    "last_opened_file_path": "C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.02_hma1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ctgan.executor&quot;: &quot;Run&quot;,
+    &quot;Python.newhma.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;0.17.2.server&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
@@ -381,21 +175,6 @@
           <line>53</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>notebook://C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data/02_HMA1_copy.ipynb</url>
-          <line>57</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>notebook://C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data/02_HMA1_copy.ipynb</url>
-          <line>55</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>239</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tutorials/newhma.py</url>
           <line>82</line>
@@ -422,21 +201,6 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tutorials/newhma.py</url>
           <line>88</line>
           <option name="timeStamp" value="22" />
@@ -445,31 +209,6 @@
           <url>file://$PROJECT_DIR$/../.conda/envs/SDV0172/Lib/site-packages/copulas/__init__.py</url>
           <line>249</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>322</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>560</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>430</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>402</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sdv/relational/hma.py</url>
-          <line>433</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
