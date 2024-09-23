@@ -112,7 +112,7 @@ sdv/data/
 docs/**/*.pkl
 docs/**/*metadata.json
 docs/savefig
-tutorials/**/*.pkl
+# tutorials/**/*.pkl
 tutorials/**/*metadata.json
 notebooks
 tests/readme_test
