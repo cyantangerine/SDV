@@ -4,7 +4,7 @@ import logging
 
 import numpy as np
 import pandas as pd
-import tqdm as tqdm
+from tqdm import notebook as tqdm
 
 from sdv.relational.base import BaseRelationalModel
 from sdv.tabular.copulas import GaussianCopula
@@ -312,23 +312,26 @@ class HMA1(BaseRelationalModel):
         for table_name, table_rows in tqdm.tqdm(sampled_data.items()):
             parents = self.metadata.get_parents(table_name)
             if parents:
-                for parent_name in tqdm.tqdm(parents, desc=f"{table_name}"):
+                for parent_name in tqdm.tqdm(parents, desc=f"{table_name}", disable=len(parents) < 2):
                     foreign_keys = self.metadata.get_foreign_keys(parent_name, table_name)
-                    for foreign_key in tqdm.tqdm(foreign_keys, desc=f"{table_name}:{parent_name}"):
+                    for foreign_key in tqdm.tqdm(foreign_keys, desc=f"{table_name}:{parent_name}", disable=len(foreign_keys)<2):
                         if foreign_key not in table_rows:
                             parent_ids = self._find_parent_ids(
                                 table_name, parent_name, foreign_key, sampled_data)
                             table_rows[foreign_key] = parent_ids
 
             dtypes = self.metadata.get_dtypes(table_name, ids=True)
-            for name, dtype in dtypes.items():
-                if name == 'course_id':
-                    print(111)
+            for name, dtype in tqdm.tqdm(dtypes.items(), desc=f"dtypes", disable=len(dtypes.items())<10):
+                #if name == 'course_id':
+                #    # print(111)
                 table_rows[name] = table_rows[name].dropna().astype(dtype)
 
             final_data[table_name] = table_rows[list(dtypes.keys())]
 
         return final_data
+    
+    def finalize(self, sampled_data):
+        return self._finalize(sampled_data)
 
     def _extract_parameters(self, parent_row, table_name, foreign_key):
         """Get the params from a generated parent row.
@@ -372,7 +375,7 @@ class HMA1(BaseRelationalModel):
         """
         num_rows = num_rows or model._num_rows
         sampled = model._sample_with_progress_bar(
-            num_rows, output_file_path='disable', show_progress_bar=False)
+            num_rows, output_file_path='disable', show_progress_bar=num_rows>=100)
 
         primary_key_name = self.metadata.get_primary_key(table_name)
         if primary_key_name:
@@ -501,7 +504,7 @@ class HMA1(BaseRelationalModel):
                 A DataFrame of the likelihood of each parent id.
         """
         likelihoods = dict()
-        for parent_id, row in parent_rows.iterrows():
+        for parent_id, row in tqdm.tqdm(parent_rows.iterrows(), desc=f'{table_name} {foreign_key} Likelihoods', total=len(parent_rows)):
             parameters = self._extract_parameters(row, table_name, foreign_key)
             table_meta = self._models[table_name].get_metadata()
             model = self._model(table_metadata=table_meta)
@@ -541,6 +544,7 @@ class HMA1(BaseRelationalModel):
             ratio = self._table_sizes[parent_name] / self._table_sizes[table_name]
             num_parent_rows = max(int(round(len(table_rows) * ratio)), 1)
             parent_model = self._models[parent_name]
+            print(num_parent_rows)
             parent_rows = self._sample_rows(parent_model, parent_name, num_parent_rows)
 
         primary_key = self.metadata.get_primary_key(parent_name)
@@ -569,7 +573,7 @@ class HMA1(BaseRelationalModel):
 
         return sampled_data
 
-    def _sample(self, table_name=None, num_rows=None, sample_children=True):
+    def _sample(self, table_name=None, num_rows=None, sample_children=True, not_finalized=False):
         """Sample the entire dataset.
 
         ``sample_all`` returns a dictionary with all the tables of the dataset sampled.
@@ -612,4 +616,6 @@ class HMA1(BaseRelationalModel):
                 psb.n = len(sampled_data)
                 psb.refresh()
 
+        if not_finalized:
+            return sampled_data
         return self._finalize(sampled_data)

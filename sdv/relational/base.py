@@ -133,7 +133,7 @@ class BaseRelationalModel:
         raise NotImplementedError()
 
     def sample(self, table_name=None, num_rows=None,
-               sample_children=True, reset_primary_keys=False):
+               sample_children=True, reset_primary_keys=False, not_finalized=False):
         """Generate synthetic data for one table or the entire dataset.
 
         If a ``table_name`` is given and ``sample_children`` is ``False``, a
@@ -182,7 +182,7 @@ class BaseRelationalModel:
         if reset_primary_keys:
             self._reset_primary_keys_generators()
 
-        return self._sample(table_name, num_rows, sample_children)
+        return self._sample(table_name, num_rows, sample_children, not_finalized)
 
     def save(self, path):
         """Save this instance to the given path using cloudpickle.
