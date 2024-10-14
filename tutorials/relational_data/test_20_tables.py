@@ -4,19 +4,7 @@ import sqlite3
 import pandas as pd
 import tqdm
 
-
-def fetch_data_from_sqlite(path='./data_sqlite.db'):
-    conn = sqlite3.connect(path)
-    query = "SELECT name FROM sqlite_master WHERE type='table';"
-    tables = pd.read_sql_query(query, conn)
-    table_names = tables['name'].tolist()
-    tables_dict = {}
-    metadata = {
-        "tables": {}
-    }
-
-    # Define relationships manually as they are not in the database
-    relationships = {
+RELATIONSHIPS = {
         "Assignment": {
             "course_id": ("Course", "course_id")
         },
@@ -37,6 +25,77 @@ def fetch_data_from_sqlite(path='./data_sqlite.db'):
         "LabEquipment": {"lab_id": ("Lab", "lab_id")},
         "EquipmentMaintenance": {"equipment_id": ("LabEquipment", "equipment_id")}
     }
+
+
+def fetch_data_from_sqlite_filter(columns, path='./data_sqlite.db'):
+    conn = sqlite3.connect(path)
+    #query = "SELECT name FROM sqlite_master WHERE type='table';"
+    #tables = pd.read_sql_query(query, conn)
+    table_names = columns
+
+    tables_dict = {}
+    metadata = {
+        "tables": {}
+    }
+
+    relationships = RELATIONSHIPS
+
+    for table_name in table_names:
+        table_data = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)
+        tables_dict[table_name] = table_data
+        schema_query = f"PRAGMA table_info({table_name})"
+        schema_info = pd.read_sql_query(schema_query, conn)
+        primary_key = schema_info[schema_info['pk'] == 1]['name'].values[0]
+        fields_metadata = {}
+
+        for _, row in schema_info.iterrows():
+            field_name = row['name']
+            field_type = 'categorical'
+            extra = {}
+            if 'id' in field_name:
+                field_type = 'id'
+                if field_name in ["course_id","assignment_id" ] :
+                    field_type = 'numerical'
+                    extra["subtype"] = 'integer'
+            elif 'date' in field_name:
+                field_type = 'datetime'
+                extra['format'] = "%Y-%m-%d" if field_name != "submission_date" else "%Y-%m-%d %H:%M:%S"
+
+            field_details = {
+                "type": field_type,
+                **extra
+            }
+            if field_type == 'id':
+                if True:  # field_name != primary_key:
+                    ref_info = relationships.get(table_name, {}).get(field_name, None)
+                    if ref_info and ref_info[0] in table_names:
+                        field_details['ref'] = {
+                            "field": ref_info[1],
+                            "table": ref_info[0]
+                        }
+            fields_metadata[field_name] = field_details
+
+        metadata['tables'][table_name] = {
+            "primary_key": primary_key,
+            "fields": fields_metadata
+        }
+
+    # metadata_json = json.dumps(metadata, indent=4)
+    conn.close()
+    return metadata, tables_dict
+
+def fetch_data_from_sqlite(path='./data_sqlite.db'):
+    conn = sqlite3.connect(path)
+    query = "SELECT name FROM sqlite_master WHERE type='table';"
+    tables = pd.read_sql_query(query, conn)
+    table_names = tables['name'].tolist()
+    tables_dict = {}
+    metadata = {
+        "tables": {}
+    }
+
+    # Define relationships manually as they are not in the database
+    relationships = RELATIONSHIPS
 
     for table_name in table_names:
         table_data = pd.read_sql_query(f"SELECT * FROM {table_name}", conn)

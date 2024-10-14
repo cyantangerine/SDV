@@ -1,133 +1,16 @@
 {
     "tables": {
-        "Student": {
-            "primary_key": "student_id",
+        "BookLoan": {
+            "primary_key": "loan_id",
             "fields": {
-                "student_id": {
+                "loan_id": {
                     "type": "id"
                 },
-                "name": {
-                    "type": "categorical"
-                },
-                "email": {
-                    "type": "categorical"
-                },
-                "date_of_birth": {
-                    "type": "categorical"
-                },
-                "major": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Professor": {
-            "primary_key": "professor_id",
-            "fields": {
-                "professor_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "email": {
-                    "type": "categorical"
-                },
-                "department": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Course": {
-            "primary_key": "course_id",
-            "fields": {
-                "course_id": {
-                    "type": "id"
-                },
-                "title": {
-                    "type": "categorical"
-                },
-                "credits": {
-                    "type": "categorical"
-                },
-                "department": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Department": {
-            "primary_key": "department_id",
-            "fields": {
-                "department_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "building": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Enrollment": {
-            "primary_key": "enrollment_id",
-            "fields": {
-                "enrollment_id": {
-                    "type": "id"
-                },
-                "student_id": {
+                "book_id": {
                     "type": "id",
                     "ref": {
-                        "field": "student_id",
-                        "table": "Student"
-                    }
-                },
-                "course_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "course_id",
-                        "table": "Course"
-                    }
-                },
-                "semester": {
-                    "type": "categorical"
-                },
-                "grade": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Assignment": {
-            "primary_key": "assignment_id",
-            "fields": {
-                "assignment_id": {
-                    "type": "id"
-                },
-                "course_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "course_id",
-                        "table": "Course"
-                    }
-                },
-                "title": {
-                    "type": "categorical"
-                },
-                "due_date": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Submission": {
-            "primary_key": "submission_id",
-            "fields": {
-                "submission_id": {
-                    "type": "id"
-                },
-                "assignment_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "assignment_id",
-                        "table": "Assignment"
+                        "field": "book_id",
+                        "table": "Book"
                     }
                 },
                 "student_id": {
@@ -137,107 +20,13 @@
                         "table": "Student"
                     }
                 },
-                "submission_date": {
-                    "type": "categorical"
+                "loan_date": {
+                    "type": "datetime",
+                    "format": "%Y-%m-%d"
                 },
-                "grade": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Schedule": {
-            "primary_key": "schedule_id",
-            "fields": {
-                "schedule_id": {
-                    "type": "id"
-                },
-                "course_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "course_id",
-                        "table": "Course"
-                    }
-                },
-                "professor_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "professor_id",
-                        "table": "Professor"
-                    }
-                },
-                "room": {
-                    "type": "categorical"
-                },
-                "time_slot": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "Major": {
-            "primary_key": "major_id",
-            "fields": {
-                "major_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "department_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "department_id",
-                        "table": "Department"
-                    }
-                }
-            }
-        },
-        "Textbook": {
-            "primary_key": "textbook_id",
-            "fields": {
-                "textbook_id": {
-                    "type": "id"
-                },
-                "title": {
-                    "type": "categorical"
-                },
-                "author": {
-                    "type": "categorical"
-                },
-                "isbn": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "CourseTextbook": {
-            "primary_key": "course_id",
-            "fields": {
-                "course_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "course_id",
-                        "table": "Course"
-                    }
-                },
-                "textbook_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "textbook_id",
-                        "table": "Textbook"
-                    }
-                }
-            }
-        },
-        "Library": {
-            "primary_key": "library_id",
-            "fields": {
-                "library_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "location": {
-                    "type": "categorical"
+                "return_date": {
+                    "type": "datetime",
+                    "format": "%Y-%m-%d"
                 }
             }
         },
@@ -265,18 +54,46 @@
                 }
             }
         },
-        "BookLoan": {
-            "primary_key": "loan_id",
+        "Library": {
+            "primary_key": "library_id",
             "fields": {
-                "loan_id": {
+                "library_id": {
                     "type": "id"
                 },
-                "book_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "book_id",
-                        "table": "Book"
-                    }
+                "name": {
+                    "type": "categorical"
+                },
+                "location": {
+                    "type": "categorical"
+                }
+            }
+        },
+        "Student": {
+            "primary_key": "student_id",
+            "fields": {
+                "student_id": {
+                    "type": "id"
+                },
+                "name": {
+                    "type": "categorical"
+                },
+                "email": {
+                    "type": "categorical"
+                },
+                "date_of_birth": {
+                    "type": "datetime",
+                    "format": "%Y-%m-%d"
+                },
+                "major": {
+                    "type": "categorical"
+                }
+            }
+        },
+        "Enrollment": {
+            "primary_key": "enrollment_id",
+            "fields": {
+                "enrollment_id": {
+                    "type": "id"
                 },
                 "student_id": {
                     "type": "id",
@@ -285,120 +102,40 @@
                         "table": "Student"
                     }
                 },
-                "loan_date": {
+                "course_id": {
+                    "type": "numerical",
+                    "subtype": "integer"
+                },
+                "semester": {
                     "type": "categorical"
                 },
-                "return_date": {
+                "grade": {
                     "type": "categorical"
                 }
             }
         },
-        "ResearchGroup": {
-            "primary_key": "group_id",
+        "Submission": {
+            "primary_key": "submission_id",
             "fields": {
-                "group_id": {
+                "submission_id": {
                     "type": "id"
                 },
-                "name": {
-                    "type": "categorical"
+                "assignment_id": {
+                    "type": "numerical",
+                    "subtype": "integer"
                 },
-                "focus_area": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "ResearchProject": {
-            "primary_key": "project_id",
-            "fields": {
-                "project_id": {
-                    "type": "id"
-                },
-                "title": {
-                    "type": "categorical"
-                },
-                "group_id": {
+                "student_id": {
                     "type": "id",
                     "ref": {
-                        "field": "group_id",
-                        "table": "ResearchGroup"
+                        "field": "student_id",
+                        "table": "Student"
                     }
                 },
-                "start_date": {
-                    "type": "categorical"
+                "submission_date": {
+                    "type": "datetime",
+                    "format": "%Y-%m-%d %H:%M:%S"
                 },
-                "end_date": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "ProjectMember": {
-            "primary_key": "project_id",
-            "fields": {
-                "project_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "project_id",
-                        "table": "ResearchProject"
-                    }
-                },
-                "professor_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "professor_id",
-                        "table": "Professor"
-                    }
-                }
-            }
-        },
-        "Lab": {
-            "primary_key": "lab_id",
-            "fields": {
-                "lab_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "building": {
-                    "type": "categorical"
-                }
-            }
-        },
-        "LabEquipment": {
-            "primary_key": "equipment_id",
-            "fields": {
-                "equipment_id": {
-                    "type": "id"
-                },
-                "name": {
-                    "type": "categorical"
-                },
-                "lab_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "lab_id",
-                        "table": "Lab"
-                    }
-                }
-            }
-        },
-        "EquipmentMaintenance": {
-            "primary_key": "maintenance_id",
-            "fields": {
-                "maintenance_id": {
-                    "type": "id"
-                },
-                "equipment_id": {
-                    "type": "id",
-                    "ref": {
-                        "field": "equipment_id",
-                        "table": "LabEquipment"
-                    }
-                },
-                "date": {
-                    "type": "categorical"
-                },
-                "details": {
+                "grade": {
                     "type": "categorical"
                 }
             }

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f0299d6-3f2f-4d86-8fd1-5f97f24d996d" name="更改" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_20_39____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_00____.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_00____2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_01____1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_08____.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorials/relational_data/HMA_1k.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorials/test_1k_label.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorials/test_1k_simulate.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorials/test_evaluation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SDV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SDV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_14_56____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_14_56____.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_01____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_01____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1_copy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1_copy.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/test_20_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/test_20_tables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,18 +37,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "cyantangerine"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;cyantangerine&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cyantangerine/SDV.git",
-    "accountId": "830d8ca6-a229-4f2b-9a4f-e3ec0d57c205"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cyantangerine/SDV.git&quot;,
+    &quot;accountId&quot;: &quot;830d8ca6-a229-4f2b-9a4f-e3ec0d57c205&quot;
   }
-}]]></component>
+}</component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -54,29 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.02_hma1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ctgan.executor&quot;: &quot;Run&quot;,
-    &quot;Python.newhma.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;0.17.2.server&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.02_hma1.executor": "Run",
+    "Python.ctgan.executor": "Run",
+    "Python.newhma.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "0.17.2.server",
+    "last_opened_file_path": "C:/Users/Elvin/Desktop/GitHub/SDV/tutorials/relational_data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
