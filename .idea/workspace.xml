@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f0299d6-3f2f-4d86-8fd1-5f97f24d996d" name="更改" comment="test">
-      <change afterPath="$PROJECT_DIR$/tutorials/relational_data/HMA_1k.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorials/test_1k_label.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorials/test_1k_simulate.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tutorials/test_evaluation.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SDV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SDV.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_14_56____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_14_56____.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_01____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2024_9_10_23_01____.xml" afterDir="false" />
+    <list default="true" id="1f0299d6-3f2f-4d86-8fd1-5f97f24d996d" name="更改" comment="1ktest">
+      <change afterPath="$PROJECT_DIR$/tutorials/relational_data/test_1k_label_split.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tutorials/relational_data/test_1k_simulate_split.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1_copy.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/02_HMA1_copy.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/test_20_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/test_20_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials/relational_data/HMA_1k.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/relational_data/HMA_1k.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorials/test_evaluation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/tutorials/test_evaluation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,6 +120,9 @@
       <recent name="C:\Users\Elvin\Desktop\GitHub\SDV\tutorials\relational_data" />
       <recent name="C:\Users\Elvin\Desktop\GitHub\SDV\tutorials" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elvin\Desktop\GitHub\SDV\tutorials\relational_data" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <myKeys>
@@ -173,6 +171,8 @@
       <workItem from="1727248651395" duration="2804000" />
       <workItem from="1727262780833" duration="4758000" />
       <workItem from="1727407615284" duration="3639000" />
+      <workItem from="1728973636977" duration="1289000" />
+      <workItem from="1728987018464" duration="1145000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725723970984</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1ktest">
+      <option name="closed" value="true" />
+      <created>1728910719763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728910719763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +209,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="1ktest" />
+    <option name="LAST_COMMIT_MESSAGE" value="1ktest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
