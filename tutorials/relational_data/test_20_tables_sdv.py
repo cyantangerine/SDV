@@ -81,7 +81,7 @@ def fetch_data_from_sqlite_filter(columns=x_arg.x_table, path='./data_sqlite.db'
             extra = {}
             if 'id' in field_name:
                 field_type = 'id'
-                if field_name in ["course_id", "assignment_id"]:
+                if field_name in ["assignment_id"]:  # "course_id",
                     field_type = 'numerical'
                     extra["subtype"] = 'integer'
             elif 'date' in field_name:

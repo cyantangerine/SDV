@@ -1,4 +1,5 @@
 from typing import Dict
+
 from pandas import DataFrame
 
 
@@ -22,7 +23,6 @@ def build_sdv_metadata_from_origin_tables(added_origin: Dict[str, DataFrame], me
             o["subtype"] = "integer"
         return o
 
-
     for table_name, table in added_origin.items():
         cols = otables[table_name].columns
         maps = {
@@ -33,7 +33,8 @@ def build_sdv_metadata_from_origin_tables(added_origin: Dict[str, DataFrame], me
 
         new_fields = {}
         for k, v in maps.items():
-            new_fields.update({item: del_ref(meta["tables"][table_name]["fields"][k], item) for item in v})
+            new_fields.update(
+                {item: del_ref(meta["tables"][table_name]["fields"][k], item) for item in v})
         meta["tables"][table_name]["fields"].update(new_fields)
 
     return meta
