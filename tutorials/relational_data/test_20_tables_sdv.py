@@ -1,5 +1,6 @@
 import json
 import sqlite3
+from typing import NamedTuple, List, Tuple
 
 import pandas as pd
 import tqdm
@@ -26,12 +27,38 @@ RELATIONSHIPS = {
         "EquipmentMaintenance": {"equipment_id": ("LabEquipment", "equipment_id")}
     }
 
+x_args_type = NamedTuple('x_args_type', [
+    ('x_table', List[str]),
+    ('x_key', List[str]),
+    ('x_how', List[str]),
+    ('meta_datetime_escapes', List[Tuple[str, str]]),
+    ('meta_time_escapes', List[Tuple[str, str]])
+])
 
-def fetch_data_from_sqlite_filter(columns, path='./data_sqlite.db'):
+x_arg = x_args_type(
+        x_table=["BookLoan",
+                 "Book", "Library", "Student",
+                 "Enrollment", "Submission", "Course",
+                 # "Assignment"
+                 "CourseTextbook", "Textbook",
+                 "Schedule", "Professor", 'ProjectMember',
+                 'ResearchProject', 'ResearchGroup'],
+        x_key=[
+            'book_id', "library_id", "student_id",
+            "student_id", "student_id", "course_id",
+            # "assignment_id",
+            "course_id", "textbook_id",
+            "course_id", "professor_id", "professor_id",
+            "project_id", "group_id"],
+        x_how=['inner' for _ in range(13)],
+        meta_datetime_escapes=[("Submission", "submission_date")],
+        meta_time_escapes=[("Schedule", "time_slot")]
+    )
+
+def fetch_data_from_sqlite_filter(columns=x_arg.x_table, path='./data_sqlite.db'):
+
     conn = sqlite3.connect(path)
-    #query = "SELECT name FROM sqlite_master WHERE type='table';"
-    #tables = pd.read_sql_query(query, conn)
-    table_names = columns
+    table_names = columns.copy()
 
     tables_dict = {}
     metadata = {
@@ -54,12 +81,17 @@ def fetch_data_from_sqlite_filter(columns, path='./data_sqlite.db'):
             extra = {}
             if 'id' in field_name:
                 field_type = 'id'
-                if field_name in ["course_id","assignment_id" ] :
+                if field_name in ["course_id", "assignment_id"]:
                     field_type = 'numerical'
                     extra["subtype"] = 'integer'
             elif 'date' in field_name:
                 field_type = 'datetime'
-                extra['format'] = "%Y-%m-%d" if field_name != "submission_date" else "%Y-%m-%d %H:%M:%S"
+                if (table_name, field_name) in x_arg.meta_datetime_escapes:
+                    extra['format'] = "%Y-%m-%d %H:%M:%S"
+                elif (table_name, field_name) in x_arg.meta_time_escapes:
+                    extra['format'] = "%H:%M:%S"
+                else:
+                    extra['format'] = "%Y-%m-%d"
 
             field_details = {
                 "type": field_type,
@@ -74,6 +106,7 @@ def fetch_data_from_sqlite_filter(columns, path='./data_sqlite.db'):
                             "table": ref_info[0]
                         }
             fields_metadata[field_name] = field_details
+
 
         metadata['tables'][table_name] = {
             "primary_key": primary_key,

@@ -3,7 +3,7 @@ import warnings
 warnings.filterwarnings('ignore')
 sys.path.append('/home/wbx/SDV/')
 from sdv.relational import HMA1
-from test_20_tables import save_tables, fetch_data_from_sqlite
+from test_20_tables_sdv import save_tables, fetch_data_from_sqlite
 import time
 from sdv import Metadata
 import os
