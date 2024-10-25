@@ -116,3 +116,5 @@ docs/savefig
 tutorials/**/*metadata.json
 notebooks
 tests/readme_test
+/tutorials/relational_data/test_datas
+tutorials/relational_data/my_model_1k.pkl
