@@ -1,9 +1,9 @@
-import json
 import sqlite3
-from typing import NamedTuple, List, Tuple
 
 import pandas as pd
 import tqdm
+
+from tutorials.relational_data.test_datas.Xargs import XArgs
 
 RELATIONSHIPS = {
         "Assignment": {
@@ -27,38 +27,10 @@ RELATIONSHIPS = {
         "EquipmentMaintenance": {"equipment_id": ("LabEquipment", "equipment_id")}
     }
 
-x_args_type = NamedTuple('x_args_type', [
-    ('x_table', List[str]),
-    ('x_key', List[str]),
-    ('x_how', List[str]),
-    ('meta_datetime_escapes', List[Tuple[str, str]]),
-    ('meta_time_escapes', List[Tuple[str, str]])
-])
-
-x_arg = x_args_type(
-        x_table=["BookLoan",
-                 "Book", "Library", "Student",
-                 "Enrollment", "Submission", "Course",
-                 # "Assignment"
-                 "CourseTextbook", "Textbook",
-                 "Schedule", "Professor", 'ProjectMember',
-                 'ResearchProject', 'ResearchGroup'],
-        x_key=[
-            'book_id', "library_id", "student_id",
-            "student_id", "student_id", "course_id",
-            # "assignment_id",
-            "course_id", "textbook_id",
-            "course_id", "professor_id", "professor_id",
-            "project_id", "group_id"],
-        x_how=['inner' for _ in range(13)],
-        meta_datetime_escapes=[("Submission", "submission_date")],
-        meta_time_escapes=[("Schedule", "time_slot")]
-    )
-
-def fetch_data_from_sqlite_filter(columns=x_arg.x_table, path='./data_sqlite.db'):
+def fetch_data_from_sqlite_filter(x_arg=XArgs.tables_14, path='./data_sqlite.db'):
 
     conn = sqlite3.connect(path)
-    table_names = columns.copy()
+    table_names = x_arg.x_table.copy()
 
     tables_dict = {}
     metadata = {
@@ -81,7 +53,7 @@ def fetch_data_from_sqlite_filter(columns=x_arg.x_table, path='./data_sqlite.db'
             extra = {}
             if 'id' in field_name:
                 field_type = 'id'
-                if field_name in ["assignment_id"]:  # "course_id",
+                if field_name in x_arg.meta_id_escapes:
                     field_type = 'numerical'
                     extra["subtype"] = 'integer'
             elif 'date' in field_name:
